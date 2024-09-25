@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="column col-3 px-2">
+        <!-- search bar -->
+        <nav class="navbar pt-0 pb-3">
+          <div class="container-fluid">
+            <form class="row gy-2" role="search">
+              <label for="citySearch" class="fs-2 fw-bold">Search For a City:</label>
+              <input id="citySearch" class="form-control " type="search" placeholder="Enter City Here"
+                aria-label="Search">
+              <button class="btn btn-search" id="btn-search1" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <!-- search history -->
+        <div class="card border-0 border-top border-3 rounded-0 pt-2" id="searchHistory">
+        </div>
+      </aside>
+      <main class="column col-8 px-2 gy-2">
+        <!-- city info -->
+        <div class="card rounded-0 border-dark">
+          <div class="card-body p-1" id="mainCard">
+            <h3 id="cityName"></h3>
+            <p id="temp" class="fs-5"></p>
+            <p id="wind" class="fs-5"></p>
+            <p id="humidity" class="fs-5"></p>
+          </div>
+        </div>
+        <!-- 5 day forecast card -->
+        <h3 class="my-2">5 Day Weather Forecast: </h3>
+        <div class="container-fluid p-0 ">
+          <div class="row justify-content-between gx-0" id="forecastCards">
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

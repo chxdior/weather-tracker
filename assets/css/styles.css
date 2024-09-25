@@ -1,0 +1,24 @@
+
+header h1 {
+    background: linear-gradient(to right, #8f9bce, #3f0bda);
+    padding-left: 1.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.btn-search {
+    background-color: #8f9bce ;
+}
+
+button {
+    background-color: #8f9bce;
+}
+
+.myCards {
+   background-color: #949494;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
